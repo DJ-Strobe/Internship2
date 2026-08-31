@@ -9,14 +9,14 @@
  *
  * 对拍脚本：scripts/verify_bn.py
  *
- * compile: gcc -Wall -Wextra -std=gnu99 -o bn_test bn_test.c bn.c
+ * compile: cd .. && gcc -Wall -Wextra -std=gnu99 -o test/bn_test test/bn_test.c bn.c
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#include "bn.h"
+#include "../bn.h"
 
 /* SM2 素数域模数 p = 2^256 - 2^224 - 2^96 + 2^64 - 1（GB/T 32918-2016） */
 static const char *SM2_P_HEX =

@@ -10,14 +10,14 @@
  *   SM3("abc") = 66c7f0f462eeedd9d1f2d46bdc10e4e24167c4875cf2f7a2297da02b8f4ba8e0
  *   SM3(abcd×16) = debe9ff92275b8a138604889c18e5a4d6fdb70e5387e5765293dcba39c0c5732
  *
- * compile: gcc -Wall -Wextra -std=gnu99 -o sm3_test sm3_test.c sm3.c
+ * compile: cd .. && gcc -Wall -Wextra -std=gnu99 -o test/sm3_test test/sm3_test.c sm3.c
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#include "sm3.h"
+#include "../sm3.h"
 
 static int fail_count = 0;
 

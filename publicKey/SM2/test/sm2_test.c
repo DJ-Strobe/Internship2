@@ -9,15 +9,15 @@
  *
  * 对拍脚本：scripts/verify_sm2.py（使用 Python gmssl 库交叉验证）
  *
- * compile: gcc -Wall -Wextra -std=gnu99 -o sm2_test sm2_test.c sm2.c sm3.c bn.c
+ * compile: cd .. && gcc -Wall -Wextra -std=gnu99 -o test/sm2_test test/sm2_test.c sm2.c sm3.c bn.c
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#include "sm2.h"
-#include "sm3.h"
+#include "../sm2.h"
+#include "../sm3.h"
 
 static int fail_count = 0;
 
